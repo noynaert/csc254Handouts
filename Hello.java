@@ -1,6 +1,10 @@
 
-/*
-   Simple Hello, World program.
+/**
+* This program demonstrates a "Hello, World" program with comments
+*
+* @author Evan Noynaert
+* @since September, 2021
+*
 */
 public class Hello {
     public static void main(String[] args) {
