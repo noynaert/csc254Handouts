@@ -16,7 +16,7 @@ public class ReadKeyboard{
 
         System.out.print("Enter a double: ");
         x = keyboard.nextDouble();
-        System.out.println("Double is "+double);
+        System.out.println("Double is "+x);
 
     }
 }
