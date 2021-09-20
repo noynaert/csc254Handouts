@@ -22,6 +22,19 @@ This style of comment should ***only*** be used immediately before:
 
 Use the /*...*/ comment or the // style comment for comments that are inside a function.
 
+For a public class, the Javadoc comment should appear right before the class.  This is *after* the import and package statements.
+
+## Love for Blank Lines
+
+Use blank lines to separate blocks of code.
+
+## Code comes after the comments for the section
+
+Traditionally there is a comment that explains what the code is doing, then the code appears after the comment.
+## Closing the scanner
+
+In class I neglected to close the scanner.  Really the scanner should be closed as part of the input section
+
 ## The trap
 
 The formula was specified with 5/9 first.  This would cause integer division and would always give 0.  
