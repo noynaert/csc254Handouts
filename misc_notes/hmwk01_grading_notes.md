@@ -46,6 +46,7 @@ The formula was specified with 5/9 first.  This would cause integer division and
  Leave 5/9 first, but make it do floating point arithmetic
 
  * Make 5 or 9 or both as floating point numbers.
+    * 5d/9
     * 5./9
     * 5/9.
     * 5./9.
