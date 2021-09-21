@@ -1,0 +1,219 @@
+
+
+2021-09-19 13:07              xxxxyyyyy Hmwk01.java              Page 1
+
+
+    1	//package CSC254.hmwk01;
+    2	
+    3	import java.util.Scanner;
+    4	/**
+    5	 * This is a program that will convert a temperature
+    6	 * entered in Farenhit to degrees Celcius
+    7	 * 
+    8	 * @author xxxx yyyyy
+    9	 * @since September 2021
+   10	 */
+   11	public class Hmwk01 {
+   12	    public static void main(String[] args){
+   13	        double farenheit; //variable for the input
+   14	        double celcius; //variable for the output
+   15	        Scanner input = new Scanner(System.in);
+   16	
+   17	        // Get user input
+   18	        System.out.print("\nFarenheit: ");
+   19	        farenheit = input.nextDouble();
+   20	
+   21	        //Calculate the degrees celcius
+   22	        celcius = 5./9 * (farenheit - 32);
+   23	
+   24	        //Print the Results
+   25	        System.out.println("\n" + farenheit + " degrees Farenheit is equivalent to " + celcius + " degrees Celcius.\n");
+   26	
+   27	    }
+   28	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ____________________________________
+< Successful Compile! of Hmwk01.java >
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+------------------------------ input ../data01.txt -----------------------------
+Data is 212
+
+
+
+Farenheit: 
+212.0 degrees Farenheit is equivalent to 100.0 degrees Celcius.
+
+
+------------------------------ input ../data02.txt -----------------------------
+Data is 32
+
+
+
+Farenheit: 
+32.0 degrees Farenheit is equivalent to 0.0 degrees Celcius.
+
+
+------------------------------ input ../data.03.txt -----------------------------
+Data is -40.0
+
+
+
+Farenheit: 
+-40.0 degrees Farenheit is equivalent to -40.0 degrees Celcius.
+
+
+------------------------------ input ../data.04.txt -----------------------------
+Data is -40.0
+
+
+
+Farenheit: 
+-40.0 degrees Farenheit is equivalent to -40.0 degrees Celcius.
+
+
+------------------------------ input ../data05.txt -----------------------------
+Data is 101
+
+
+
+Farenheit: 
+101.0 degrees Farenheit is equivalent to 38.333333333333336 degrees Celcius.
+
+
+------------------------------ input ../data06.txt -----------------------------
+Data is 0
+
+
+
+Farenheit: 
+0.0 degrees Farenheit is equivalent to -17.77777777777778 degrees Celcius.
+
+
+------------------------------ input ../data07.txt -----------------------------
+Data is -100
+
+
+
+Farenheit: 
+-100.0 degrees Farenheit is equivalent to -73.33333333333334 degrees Celcius.
+
+
+------------------------------ input ../data08.txt -----------------------------
+Data is 10000
+
+
+
+Farenheit: 
+10000.0 degrees Farenheit is equivalent to 5537.777777777778 degrees Celcius.
+
+
+------------------------------ input ../data09.txt -----------------------------
+Data is 32.000000000005
+
+
+
+Farenheit: 
+32.000000000005 degrees Farenheit is equivalent to 2.7790115887506143E-12 degrees Celcius.
+
+
+------------------------------ input ../data_BAD_DATA.txt -----------------------------
+Data is ZERO
+
+
+
+Farenheit: Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextDouble(Scanner.java:2564)
+	at Hmwk01.main(Hmwk01.java:19)
+ _____________
+< Run aborted >
+ -------------
+        \   ^__^
+         \  (xx)\_______
+            (__)\       )\/\
+             U  ||----w |
+                ||     ||
+
+ _________________________________________
+/ IT'S A TRAP! The last run should have   \
+| ended in an error because the input was |
+\ text, not a number.                     /
+ -----------------------------------------
+         \
+          \
+                      ?IIIIIII7II?????+
+                   ~III777II777I?+==++==+:
+                  ???I7I???I7II++=====++===
+                 ??+??????????+===~~=+++??==+
+                ??+??II??????+==~=~~=+++++==++
+               I+?????????+?+====~=~==+==++?==?
+              ?????II?????+++++=======?===~~~~==
+            ,?????II????????++++====~===::~~~~:~
+            I?I??II?+++??+?+++==~~~~:~:~:,:,,:::~
+           I??????+==+???++++=~~:~:~:,:::,:,,,,,::
+          +I?++++=+=+????+++=~~:~~:::,,,,::,,,:,:
+          I??+?+====+???+++===~~::::,::,:,,,,,,::
+         I????=~===++?+=+=~==~:~~:,,,,,,,.,,,,,:~
+        =??+?=~~~~??+?+===~~==,==~~~~,,,,..,,,.:=
+        II++==~~=++++++=~~=~,~+=?+?=I?++=..,.,,:
+     IIII?+?=====+~+++~=~~~:::=~+~===:,,,,,.,.::
+    I?=?I+??+=~=~?I?=+=~~~::,~~=~::~=::,,,,,,::
+    ?+I??++=++~,::+++~~~:::,,=~~=,~,..,::.:
+    ++=+?++~=:~::I+,~=:~,:,,,,:~~......::~,,,
+     ~=~=:.++~:,.,~=::::.,,:,.:~,:=...==~,::
+     =~?++??+=~~,.:?~.:,:,,,.,::,,~:=~=::,~
+     ++~~:~===~:~,.~::,~=~.:,..,:,,:==:.,:7
+     ~~,::...:=:,::+:~:.,~,...,.,,,,::~,,::~=
+      =~===+=~~,.::,,,:::,..,,,,,,,,,,,:,..,=+?
+      ~=~=~::~~~::,.,,,~:.+,..,,,,..,,,,...,+I?
+      ~==~:~~:~~,~=~~:,:~,:,,,,,,....,,,..+?I?I
+      ~=~=+,:~:=,:~~~~~~::::,.,,.,,.,,,..~+????I
+      ~=~==~=:~~:,~~~~~:::,::,.,,,..,,,I77I?+??II
+      +I7:::~~=~:,::~~~~.=.,~,,,,...,~7III?+??II7
+     777?+~:=~=~~:,::~~:::.,,,,,,,,,777II??I777777
+     777I==:=~::~~~~::~:::,:,:~:::,777I???777777777
+    7777+,~===~:~:~~~~:::,.~:=,,:777II???77777777777=?
+    777I~,~~~=~::~:,:,,,:=~~,,:7777I???I7777777777+=++
+  I7777I,,:,.==::::,:,,,,::::7777I+??I77777777777??I7I7,
+ ,77777I::,..~~:,,,,,,.,:~I7777I+??I777777777777?I7777777,
+ 77777777,...~~:,,,,,.,77777I7???II777777777777+?7777777777
+77777777777:,~~~,,=7777777I???II777777777777777+77777777777
+77777777777777777777777I+7?7II77777777777777777+777777777777
