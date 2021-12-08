@@ -53,24 +53,39 @@ Page|Checkpoint|Notes
 :---:|:---|:---
 206|6.1.1|And important question!
 208|6.2.1 - 6.2.2|
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
-||
+210|6.3.1 - 6.3.2|
+212|6.4.1 - 6.4.5|
+216|6.5.1 - 6.5.4|
+219|~~6.6.1 - 6.6.2~~|(skip)
+221|~~6.7.1~~|(skip)
+223|6.8.1 - 6.8.2| We talked about this several times.  Be sure nto to ignore it.
+225|6.9.1 - 6.9.2|
+
+## Chapter 7, Arrays
+
+Page|Checkpoint|Notes
+:---:|:---|:---
+255|7.2.1 - 7.2.11|
+260|~~7.4.1~~|(skip)
+216|~~7.5.1 - 7.5.2~~|(skip)
+264|7.6.1|
+265|~~7.7.1~~|(skip)
+268|~~7.8.1-7.8.2~~|(skip)
+269|~~7.9.1 - 7.9.2~~|(skip)
+273|~~7.10.1 - 7.1.3~~|(skip)
+274|7.11.1 - 7.11.2|
+276|~~7.12.1 - 7.12.2~~|(skip)
+278|~~7.13.1 - 7.13.2~~|(skip)
+
+## Chapter 8, Multidimensional Arrays
+(Skip this chapter)
+
+## Chapter 9, Objects and Classes
+
+Page|Checkpoint|Notes
+:---:|:---|:---
+
+
 ||
 ||
 ||
