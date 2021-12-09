@@ -1,7 +1,7 @@
 # Study Guide CSC 254
 ## Final Exam, Fall 2021
 
-* The exam will be on Thursday, December 16	10:30 a.m. – 12:30 p.m.
+* The exam will be on Tuesday, December 14	8:00 a.m. – 10:00 a.m.
 * The exam will be closed book.
 * The majority of the exam will be objective questions.  
 * You will be expected to write code for part of the exam.  You should be able to write the following:
