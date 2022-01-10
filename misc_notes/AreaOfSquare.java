@@ -1,3 +1,4 @@
+package misc_notes;
 
 
 public class AreaOfSquare {

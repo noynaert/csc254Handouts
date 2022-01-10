@@ -1,3 +1,4 @@
+package misc_notes;
 //Illustrates reading from keyboard
 
 import java.util.Scanner;

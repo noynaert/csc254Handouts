@@ -1,3 +1,4 @@
+package misc_notes;
 
 /**
 * This program demonstrates a "Hello, World" program with comments
