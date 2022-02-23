@@ -6,8 +6,6 @@ Strings are a class, not a "primitive" data types.
 
 ### Concatenating Strings
 
-### Converting strings
-
 ### Comparing Strings
 
 ### Substrings
