@@ -31,34 +31,4 @@ If you do need the Trig functions, remember that the trig functions take argumen
 
 ## Random 
 
-## Character Data
 
-The data type char uses 'single quote' marks.  Character data is different than String data.
-
-In effect Java treats character data more like integers than strings.
-
-### ASCII
-
-### Unicode
-
-### Escape Sequences
-
-### Comparing and testing char data
-
-## String
-
-Strings are a class, not a "primitive" data types.
-
-### charAt
-
-### Concatenating Strings
-
-### Converting strings
-
-### Comparing Strings
-
-### Substrings
-
-## Converting between numbers and strings
-
-## Formatting console output
