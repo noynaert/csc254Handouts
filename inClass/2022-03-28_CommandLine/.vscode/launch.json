@@ -16,7 +16,7 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "2022-03-28_CommandLine_9f31e3a1",
-            "args" : ["234.345", "-5.13"]
+            "args" : ["data02", "10"]
         }
     ]
 }
