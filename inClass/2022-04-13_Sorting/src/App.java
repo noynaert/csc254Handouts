@@ -7,27 +7,34 @@ public class App {
         int nWords = words.length;
 
         print(numbers, n);
-        moveSmallestToTop(numbers, n);
+        sort(numbers, n);
         print(numbers, n);
+
+        print(words, nWords);
+        sort(words, nWords);
+        print(words,nWords);
 
         System.out.println("Done!");
     }
+
+    public static void sort(String[] numbers, int n) {
+        int locationOfSmallestItemSoFar;
     
-    public static void moveSmallestToTop(double[] numbers, int n) {
-        int locationOfSmallestItemSoFar = 0;
-        
-        for (int i = 1; i < n; i++) {
-            if (numbers[i] < numbers[locationOfSmallestItemSoFar]) {
-                locationOfSmallestItemSoFar = i;
+        for (int i = 0; i < (n - 1); i++) {
+            locationOfSmallestItemSoFar = i;
+            int oldTop = i;
+            for (int j = (i + 1); j < n; j++) {
+                if (numbers[j].compareToIgnoreCase( numbers[locationOfSmallestItemSoFar]) < 0) {
+                    locationOfSmallestItemSoFar = j;
+                }
             }
-
+        
+            // swap
+            String temp = numbers[locationOfSmallestItemSoFar];
+            numbers[locationOfSmallestItemSoFar] = numbers[oldTop];
+            numbers[oldTop] = temp;
         }
-        //
-        double temp = numbers[locationOfSmallestItemSoFar];
-        numbers[locationOfSmallestItemSoFar] = numbers[0];
-        numbers[0] = temp;
     }
-
 
     private static void print(String[] words, int n) {
         System.out.println("----------------");
@@ -37,14 +44,34 @@ public class App {
 
         System.out.println("----------------");
     }
+    
+    public static void sort(double[] numbers, int n) {
+        int locationOfSmallestItemSoFar;
 
-    public static void print(double[] numbers, int n){
+        for (int i = 0; i < (n - 1); i++) {
+            locationOfSmallestItemSoFar = i;
+            int oldTop = i;
+            for (int j = (i + 1); j < n; j++) {
+                if (numbers[j] < numbers[locationOfSmallestItemSoFar]) {
+                    locationOfSmallestItemSoFar = j;
+                }
+            }
+
+            // swap
+            double temp = numbers[locationOfSmallestItemSoFar];
+            numbers[locationOfSmallestItemSoFar] = numbers[oldTop];
+            numbers[oldTop] = temp;
+        }
+    }
+
+ 
+    public static void print(double[] numbers, int n) {
         System.out.println("----------------");
-        for(int i = 0; i<n; i++){
+        for (int i = 0; i < n; i++) {
             System.out.printf("[%d] %f\n", i, numbers[i]);
         }
-        
+
         System.out.println("----------------");
-        
+
     }
 }
