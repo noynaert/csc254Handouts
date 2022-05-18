@@ -1,6 +1,0 @@
-Name    Age
-Fred    30
-Barney  29
-Wilma 30
-Betty 29
-Mr.Slate 101
