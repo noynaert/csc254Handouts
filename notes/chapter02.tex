@@ -1,0 +1,242 @@
+% Exam Template for UMTYMP and Math Department courses
+%
+% Using Philip Hirschhorn's exam.cls: http://www-math.mit.edu/~psh/#ExamCls
+%
+% run pdflatex on a finished exam at least three times to do the grading table on front page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% These lines can probably stay unchanged, although you can remove the last
+% two packages if you're not making pictures with tikz.
+\documentclass[11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+%\RequirePackage{tikz, pgflibraryplotmarks}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{CSC 254}
+\newcommand{\term}{NOTES}
+\newcommand{\examnum}{Chapter 02}
+
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.8in} r l}
+\textbf{\class} & \textbf{Name (Print):} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+
+This assignment contains \numpages\ pages (including this page) and
+\numquestions\ questions.  Check to see if any pages are missing.\\
+
+These pages are indexed to the videos for this course.\\
+
+\textbf{Grading}
+
+Your answers must be hand-written on printed copies of the notes.  
+\begin{itemize}
+    \item I will not accept typed answers
+    \item I will not accept answers written on notebook paper.
+    \item This document will only be "spot checked."  Not all answers may be graded.
+    \item \textit{Don't skip questions!} If you don't know an answer, at least give it a try.  Or explain what you don't understand.  Put a big star or arrow around the points you don't understand and ask about them in class.
+    \item Keep your copy.  When I make up the test I will go down the notes page and draw inspiration from these questions when making up the exam. These notes pages will be good study guides.
+    \item You may write any lingering questions or muddy points at the end of the document.  Then ask in class
+    \item Scan this document into a .pdf file and turn it in.  If you don't have access to a regular scanner then install a "CamScanner" app on your phone or tablet.  They work pretty well.  Photographs will not be accepted.  You must scan to a .pdf document.
+\end{itemize}
+
+\textit{\textbf{Video 02.010 Part 1}}
+
+\begin{questions}
+\question What symbol is used for a line comment? \makebox[4em]{\hrulefill}
+
+\begin{samepage}
+\question What are the Java operators for each of the following?
+\begin{itemize}
+  \item \makebox[2em]{\hrulefill}   addition 
+  \item \makebox[2em]{\hrulefill}    subtraction
+  \item \makebox[2em]{\hrulefill}    multiplication
+  \item \makebox[2em]{\hrulefill}    division
+  \item \makebox[2em]{\hrulefill}   modulo (finding the remainder
+\end{itemize}
+\end{samepage}
+
+\textit{\textbf{Video 02.020 IDs}}
+
+ \question Why is naming things difficult?  What are the characteristics of a "good" name versus a "bad" name?
+ \vspace{1.5cm}
+ 
+  
+ \begin{samepage}
+ \question What are the four syntax rules listed in the video?
+ \begin{itemize}
+    \item 
+    \item 
+    \item 
+    \item 
+  \end{itemize}
+ \end{samepage}
+ \question What characters may appear as the first character of an id?
+
+ \begin{samepage}
+    \rule{1.\textwidth}{0.4pt}
+
+\textit{The next couple of questions are not really discussed in the video.  Perhaps I should have.  But think about them and come up with an answer.}
+
+ \question A single character may be an id.  Digits are not allowed as the first character of an id. What problems could come up if this was allowed.  A sample of some possible code is listed below
+ \begin{verbatim}
+    double x = 5.0;
+    double 3 = 4.0;
+    x = 3;
+ \end{verbatim} 
+ \question A dash or hyphen may not appear as part of an id.   What problems could come up if this was allowed.  A sample of some possible code is listed below
+ \begin{verbatim}
+    double amount = 100.00;
+    double sales-tax = 0.07;
+    double price = amount * sales-tax;
+ \end{verbatim} 
+\end{samepage}
+
+\rule{1.0\textwidth}{0.4pt}
+\question Look through the list of reserved words.  We have already used some reserved words in class as we were writing programs.  
+
+\begin{samepage}
+\question A lot of words that seem like they \textit{should be} reserved words, but they are not.  In the following code circle all of the words that start with a letter but which are \textbf{\textit{not}} key words.
+
+\begin{verbatim}
+    public class Thing{
+
+        public static void main(String[] args){
+            
+            double x = 0.0;
+
+            System.out.println(Math.PI);
+        }
+    }
+\end{verbatim}
+\end{samepage}
+\question What does "case sensitive" mean?  Are Java ids case sensitive?
+%\begin{wrapfigure}{R}{0.3\textwidth}
+%    \centering
+%\includegraphics{100camel.png}
+%\end{figure}
+%\end{wrapfigure}
+\question What is "camelCase?"  Give an example.
+
+\question What is the style guideline for class names?
+\question Why is the style guideline for named constants?
+\question \$ and \_ are allowed to start Java variables.  Why shouldn't you declare variables of these types?
+\question What does "Self Documenting Code" mean?
+\question Both camelCase and underscore are useful when joining two words together into a single ID.  When does Java usually use camelCase and when does it usually use underscores?
+\begin{samepage}
+\question What do each of the following single-variable letter names usually mean?
+\begin{itemize} 
+  \item i
+  \item n
+  \item s
+  \item x and y
+\end{itemize}
+\end{samepage}
+\question Should you abbreviate?  Why or why not?\\
+
+\begin{samepage}
+\question  For each of the following, write + in front of an id if it follows both the syntax and style rules.  Put a 0 next to it if it follows the syntax, but not the style rules for user-created variables.  Put a - sign next to variables that violate the syntax rules.  Assume each is a variable.  If it would be a good name for a class then write "Class" next to it.
+\begin{itemize}
+  \item  name 
+  \item  Name 
+  \item  price 
+  \item  price 
+  \item  export
+  \item  wrkHrs
+  \item  work-hours
+  \item  final
+  \item  Final
+\end{itemize}
+\end{samepage}
+
+\textit{\textbf{Video 02.030 Variables \& Data Types}}
+
+\begin{samepage}
+\question The video discusses the 4 main data types in Java.  Write a brief description of each.  Be sure to distinguish between an integer and a double
+\end{samepage}
+\begin{samepage}
+\begin{verbatim}
+     double
+
+     integer
+
+     String
+
+     boolean
+\end{verbatim}
+\end{samepage}
+\question What is the default type for real numbers in Java?
+\begin{samepage}
+\question In the following, what gets stored in x?  Is it an int or a double?
+\begin{verbatim}
+      double x = 8
+\end{verbatim}
+\end{samepage}
+\question If you don't initialize a variable, what value is stored in the variable?
+\question If you have a number over 3 billion, can the number be stored in a double?
+\question How many digits of accuracy may be represented as a double?
+\question What would the equivalent be the "normal" decimal value of $1.23 x 10^4$
+\question Write 1.23e105 in Scientific Notation.
+\question What is the largest double value (approximately).  Would you prefer to write this number out in regular notation or would you rather write it in scientific notation?
+\question In what situations do doubles cause some problems when doing calculations?
+
+\question What is the largest possible value for an integer (to the nearest billion)?
+\question Why is String capitalized, but double and int are not capitalized?
+\question How is String data represented differently than numeric data in Java?
+\vspace{1cm}
+\question This is not explicitly covered in the video, but you should be able to reason it out if you think about it.  
+
+In Java, two integers may be compared as \texttt{(5 == 2+3)}.  What would be the problem with comparing string data such as \texttt{("Bob" == "Bo"+"b")}?
+\vspace{1cm}
+\question What types of values could a boolean variable hold?
+\question If you do not initialize a boolean variable, what value would it be set to (this question may be out of sequence.  Remember that Java defaults to a "zero-ish" value.)
+\begin{samepage}
+\question What would be printed by each of the following?  (Try each statement out in IntelliJ if you are not sure of the answer).  The last one was not done in the video.  Think about it.  Then try it.  The last question is really just an effort to force you to experiment on your own.
+\begin{verbatim}
+    System.out.println(3.14 / 0.);
+
+    System.out.println(Math.PI / -0.);
+    
+    System.out.println(Math.sqrt(-1.));
+    
+    System.out.println(Infinity - 1.0);
+
+    System.out.println(Math.log(Math.E)); 
+\end{verbatim}
+\end{samepage}
+
+
+\end{questions}
+\end{document}
