@@ -1,16 +1,11 @@
-% Exam Template for UMTYMP and Math Department courses
-%
-% Using Philip Hirschhorn's exam.cls: http://www-math.mit.edu/~psh/#ExamCls
-%
-% run pdflatex on a finished exam at least three times to do the grading table on front page.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Exam% !TEX program = xelatex
+% Notes template for CSC 254
+% The document is based on the exams class at https://math.mit.edu/~psh/exam/examdoc.pdf
+% 
+% This document uses the csc254.sty file
 
-% These lines can probably stay unchanged, although you can remove the last
-% two packages if you're not making pictures with tikz.
-\documentclass[11pt]{exam}
+\documentclass[letterpaper,11pt]{exam}
 \RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
-\RequirePackage{tikz, pgflibraryplotmarks}
 
 % By default LaTeX uses large margins.  This doesn't work well on exams; problems
 % end up in the "middle" of the page, reducing the amount of space for students
@@ -22,6 +17,7 @@
 \newcommand{\class}{CSC 254}
 \newcommand{\term}{NOTES}
 \newcommand{\examnum}{Chapter 01}
+\newcommand{\videoheading}[1]{\Large\textbf{\textit{#1}}}
 
 
 % For an exam, single spacing is most appropriate
