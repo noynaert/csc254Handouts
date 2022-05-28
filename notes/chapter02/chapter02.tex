@@ -242,6 +242,57 @@ In Java, two integers may be compared as \texttt{(5 == 2+3)}.  What would be the
 \end{verbatim}
 \end{samepage}
 \videoheading{Video 02.035 Part 1}
+\question 
+\question What import do you have to do to use the Scanner class?
+\question What is the URL for the java API?  I used version 17 in the video.  Give the URL for the version of Java that you are using.
+\question What constructor would we use if we want to read from a file?
+\question What constructor will we use to read from a file?
+\question What is the difference between a "method" and a "function?"
+\begin{samepage}
+\question What data type is returned by each of the following?  These are not answered at this point in the video.  Use the API website to figure out the types that are returned.
+\begin{itemize}
+  \item nextDouble() returns a \makebox[2in]{\hrulefill}
+  \item nextInt() returns a \makebox[2in]{\hrulefill}
+  \item next() returns a \makebox[2in]{\hrulefill}
+  \item nextLine() returns a \makebox[2in]{\hrulefill}
+\end{itemize}
+\end{samepage}
+\question Do you have to use the id "keyboard" when reading from the keyboard?  Explain your answer.
+\vspace{1cm}
+\question What is the name of the InputStream used when reading from the keyboard.  (Hint:  The answer is not System.out)
+
+\question What command would close a stream.  Assume the Scanner is called "input."
+\begin{samepage}
+\question what is the line of code that would be needed to do the following task?
+\begin{verbatim}
+  Read a double from the keyboard into a variable named \texttt{\textfb{x}};
+\end{verbatim}
+\end{samepage}
+\begin{samepage}
+\question Given the above statement that reads a variable into x, what would happen if the user typed the following input.  
+\begin{verbatim}
+    7.143  0202
+\end{verbatim}
+\end{samepage}
+\question What happens if a the user hits the Enter key or blank space when the Scanner is trying to read a number from the keyboard?
+\question What happens if the user types a number with two decimal points.  Perhaps something like 12.34.56 when the Scanner is trying to read a double (The video never does this, but you can probably guess.  Also, you should be running a playground-type program running in IntelliJ so you should be able to confirm your answer.)
+\question An exception has occurred.  
+\begin{samepage}
+\question Suppose Intellij produces the following error.  What type of exception occured?  What line number did the exception happen in?
+\begin{verbatim}
+  Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at App.main(App.java:16)
+\end{verbatim}
+  What is the name of the exception?\\
+  In your program, what line number generated the error?
+\end{samepage}
+\question What is the difference between next() and nextLine()?
+\vspace{1cm}
+\question What happens if you use next() to read from the keyboard, and the user types a number?
 
 
 \end{questions}
