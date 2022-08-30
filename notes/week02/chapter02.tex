@@ -5,7 +5,7 @@
 % This document uses the csc254.sty file
 
 \documentclass[letterpaper,11pt]{exam}
-\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+\RequirePackage{amssymb, amsfonts, amsmath, graphicx, latexsym, verbatim, xspace, setspace}
 
 % By default LaTeX uses large margins.  This doesn't work well on exams; problems
 % end up in the "middle" of the page, reducing the amount of space for students
@@ -32,7 +32,7 @@
 % These commands set up the running header on the top of the exam pages
 \pagestyle{head}
 \firstpageheader{}{}{}
-\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\includegraphics[width=1in]{javant}}
 \runningheadrule
 
 \begin{flushright}
@@ -382,4 +382,8 @@ In Java, two integers may be compared as \texttt{(5 == 2+3)}.  What would be the
     System.out.println("3" + "3");
 \end{verbatim}
 \end{questions}
+\begin{figure}[b]\label{end}
+	\center
+	\includegraphics[width=1in]{java}
+\end{figure}
 \end{document}

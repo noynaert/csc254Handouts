@@ -5,7 +5,7 @@
 % This document uses the csc254.sty file
 
 \documentclass[letterpaper,11pt]{exam}
-\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+\RequirePackage{amssymb, amsfonts, amsmath, graphicx, latexsym, verbatim, xspace, setspace}
 
 % By default LaTeX uses large margins.  This doesn't work well on exams; problems
 % end up in the "middle" of the page, reducing the amount of space for students
@@ -16,7 +16,7 @@
 % Here's where you edit the Class, Exam, Date, etc.
 \newcommand{\class}{CSC 254}
 \newcommand{\term}{NOTES}
-\newcommand{\examnum}{Chapter 01}
+\newcommand{\examnum}{Chapter ??}
 \newcommand{\videoheading}[1]{\Large\textbf{\textit{#1}}}
 
 
@@ -32,7 +32,7 @@
 % These commands set up the running header on the top of the exam pages
 \pagestyle{head}
 \firstpageheader{}{}{}
-\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\includegraphics[width=1in]{javant}}
 \runningheadrule
 
 \begin{flushright}
@@ -79,129 +79,11 @@ Your answers must be hand-written on printed copies of the notes.
 \question The videos are based on handouts that are available in a github repository.  What is the URL of the github repository?
 \vspace{.5cm}
 
-\question What are some good things about Python as a programming language?
-\begin{itemize}
-        \item
-        \item 
-\end{itemize}
-\question What are some good things about Java as a programming language?
-\begin{itemize}
-        \item
-        \item 
-        \item 
-\end{itemize}
-
-\begin{samepage}
-\question What are some limitations or problems with Java as a programming language?
-\begin{itemize}
-    \item
-    \item 
-    \item 
-\end{itemize}
-\end{samepage}
-
-\question Java was based on C++.  What are some of the problems of C++ that Java was trying to fix?
-\vspace{1cm}
-\question What is an interpreted language?  What is an example of an interpreted language?
-\vspace{1cm}
-\question What is a compiled language?  What is an example of a compiled language?
-\vspace{.5cm}
-
-\videoheading{Video 01.020 JRE \& JDK}
-\question What does JRE stand for?
-
-\question The \makebox[4em]{\hrulefill} is used to run Java programs that are already written.  The \makebox[4em]{\hrulefill} is onl needed by program developers.
-
-\question Which is the compiler, the JRE or the JDK? \makebox[4em]{\hrulefill}
-
-\begin{samepage}
-\question Check your computer to see if the JRE is installed
-\begin{itemize}
-    \item What command did you use to check?
-    \item Did you have the JRE already installed?  If you do, what version?
-\end{itemize}
-\end{samepage}
-
-\question What does JDK stand for? 
-
-\begin{samepage}
-    \question Check your computer to see if the JDK is installed
-    \begin{itemize}
-        \item What command did you use to check?
-        \item Did you have the JDK already installed?  If you do, what version?
-    \end{itemize}
-    \end{samepage}
-    
- \question What are the two main distributions of the Java JDK?
- 
- \question Who or what is "Oracle?"
- \vspace{1cm}
-
- \question What does LTS mean?  Why is LTS significant?
- \vspace{1.5cm}
-
- \question What is the most recent LTS version of Java?
-
- \question If you had to install Java, what version do you now have installed?
- \vspace{1cm}\\
- \videoheading{Video 01.030 IntelliJ IDEA}
-
-\begin{samepage}
-    \question What are three things that most IDEs do?
-    
-        \begin{enumerate}
-         \item 
-         \item 
-         \item 
-        \end{enumerate}
-\end{samepage}
-
-\question What IDE will the instructor be using in this course?
-
-\begin{samepage}
-    \question What are some other IDEs that may be used for Java?
-    \begin{itemize}
-        \item 
-        \item 
-        \item 
-    \end{itemize}
-\end{samepage}
-
-\question How can you get a free Ultimate version of IntelliJ?
-
-
-
-\videoheading{Video 01.040 First Program}
-
-\question What symbol (or sequence of symbols) starts a "JavaDoc" comment?
-
-\question What symbol (or sequence of symbols) ends a "JavaDoc" comment?
-
-\question How can you tell at a glance that an identifier refers to a class?
-
-\question True or False:  Java class names may contain blanks.
-
-\begin{samepage}
-    \question Circle the following ids if they would be good names for Java classes.  To be a good name, the name should follow both style and syntax rules.
-    \begin{itemize}
-        \item Greeting
-        \item hmwk01
-        \item Hmwk01
-        \item Homework01
-        \item Demo Project
-        \item DemoProject
-    \end{itemize}
-\end{samepage}
-
-\question If a Java class is named "Homework" then what would be the name of the file that contains the source code? \makebox[4cm]{\hrulefill}
-
-\question What is the name of the folder where you should create your Java class.
-
-\newpage
-\question Write a complete Java program, including a Javadoc comment that describes the program and specifies your name.  The program should just print out your name.
-\footnote{  If you have any concerns or points you do not understand please write them at the bottom of this page after your program. Bring up your question during the next class. \\Scan this document to a .pdf file and upload it.  Keep the original of these notes and save them to help study for the exam.}
-
 
 
 \end{questions}
+\begin{figure}[b]\label{end}
+	\center
+	\includegraphics[width=1in]{java}
+\end{figure}
 \end{document}
