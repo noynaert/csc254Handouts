@@ -26,7 +26,7 @@ X*.java
 hs_err_pid*
 
 #latex stuff
-chapter*.pdf
+
 *.aux
 *.files
 *.chapter*.log

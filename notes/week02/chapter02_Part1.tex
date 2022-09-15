@@ -1,21 +1,12 @@
-% Exam Template for UMTYMP and Math Department courses
-%
-% Using Philip Hirschhorn's exam.cls: http://www-math.mit.edu/~psh/#ExamCls
-%
-% run pdflatex on a finished exam at least three times to do the grading table on front page.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% !TEX program = xelatex
+% Notes template for CSC 254
+% The document is based on the exams class at https://math.mit.edu/~psh/exam/examdoc.pdf
+% 
+% This document uses the csc254.sty file
 
-% These lines can probably stay unchanged, although you can remove the last
-% two packages if you're not making pictures with tikz.
-\documentclass[letter,11pt]{exam}
-\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
-%\RequirePackage{tikz, pgflibraryplotmarks}
+\documentclass[letterpaper,11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, graphicx, latexsym, verbatim, xspace, setspace}
 
-\usepackage{graphicx}
-\graphicspath{ {./images/} }
-\usepackage[export]{adjustbox}
-\usepackage{wrapfig}
 % By default LaTeX uses large margins.  This doesn't work well on exams; problems
 % end up in the "middle" of the page, reducing the amount of space for students
 % to work on them.
@@ -25,7 +16,8 @@
 % Here's where you edit the Class, Exam, Date, etc.
 \newcommand{\class}{CSC 254}
 \newcommand{\term}{NOTES}
-\newcommand{\examnum}{Chapter 02}
+\newcommand{\examnum}{Week 02}
+\newcommand{\videoheading}[1]{\Large\textbf{\textit{#1}}}
 
 
 % For an exam, single spacing is most appropriate
@@ -35,13 +27,12 @@
 
 % For an exam, we generally want to turn off paragraph indentation
 \parindent 0ex
-
 \begin{document} 
 
 % These commands set up the running header on the top of the exam pages
 \pagestyle{head}
 \firstpageheader{}{}{}
-\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\includegraphics[width=1in]{javant}}
 \runningheadrule
 
 \begin{flushright}
@@ -72,9 +63,24 @@ Your answers must be hand-written on printed copies of the notes.
     \item Scan this document into a .pdf file and turn it in.  If you don't have access to a regular scanner then install a "CamScanner" app on your phone or tablet.  They work pretty well.  Photographs will not be accepted.  You must scan to a .pdf document.
 \end{itemize}
 
-\textit{\textbf{Video 02.010 Part 1}}
+\videoheading{Video 02.010 Part 1}
 
 \begin{questions}
+\begin{samepage}
+\question The video lists several concepts the instructor will assume you know.  The list is shown below.  The list is produced below.  Please circle any of the items you feel like you are unprepared for.  Then, during the class session ask about these topics.  At this point you do not need to be experts in these topics, but you should at least know what the terms refer to.
+\begin{itemize}
+  \item comments
+  \item variables
+  \item calculations and basic math
+  \item variable assignments
+  \item String literals
+  \item print statements
+  \item algorithm
+  \item debugger
+\end{itemize}
+\end{samepage}
+
+\videoheading{Video 02.010 Part 2}  
 \question What symbol is used for a line comment? \makebox[4em]{\hrulefill}
 
 \begin{samepage}
@@ -88,8 +94,7 @@ Your answers must be hand-written on printed copies of the notes.
 \end{itemize}
 \end{samepage}
 
-\textit{\textbf{Video 02.020 IDs}}
-
+\videoheading{Video 02.020 IDs}
  \question Why is naming things difficult?  What are the characteristics of a "good" name versus a "bad" name?
  \vspace{1.5cm}
  
@@ -181,7 +186,7 @@ Your answers must be hand-written on printed copies of the notes.
 \end{itemize}
 \end{samepage}
 
-\textit{\textbf{Video 02.030 Variables \& Data Types}}
+\videoheading{Video 02.030 Variables \& Data Types}
 
 \begin{samepage}
 \question The video discusses the 4 main data types in Java.  Write a brief description of each.  Be sure to distinguish between an integer and a double
@@ -237,6 +242,9 @@ In Java, two integers may be compared as \texttt{(5 == 2+3)}.  What would be the
 \end{verbatim}
 \end{samepage}
 
-
 \end{questions}
+\begin{figure}[b]\label{end}
+	\center
+	\includegraphics[width=1in]{java}
+\end{figure}
 \end{document}
