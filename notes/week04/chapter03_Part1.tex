@@ -62,13 +62,181 @@ Your answers must be hand-written on printed copies of the notes.
     \item Scan this document into a .pdf file and turn it in.  If you don't have access to a regular scanner then install a "CamScanner" app on your phone or tablet.  They work pretty well.  Photographs will not be accepted.  You must scan to a .pdf document.
 \end{itemize}
 
-\videoheading{Video 02.035 Part 1}
-
+\videoheading{Video 03.003 Newlines}
 
 \begin{questions}
-    \question What import do you have to do to use the Scanner class?
+    \question What is the difference between the \texttt{System.out.print()} and System.out.println() methods?
+   \question Is $\backslash$n considered one character or two? 
+   \question What does $\backslash$n mean?
    
+   \videoheading{{Video 03.005 Printf}}
+   \question Is printf limited to Java, C, and C++?
+   \question What is the format specifier for each of the following?
+   \begin{itemize}
+    \item integer types
+    \item floating point (real numbers)
+    \item Strings
+   \end{itemize}
+   \begin{samepage}
+   \question Rewrite the following println statement as a printf.  Don't forget the $\backslash$n at the end!  Assume that both of the variables are \textit{int}.
+
+   \begin{verbatim}
+System.out.println("Pat bought "+apples+"  and "+oranges+" oranges.");
+  
+
+\end{verbatim}
+  \end{samepage}
+
+  \videoheading{{Video 03.010 Named Constants}}
+
+  \question write the declaration for a constant for sales tax.  The sales tax is 0.0675.  Be sure to use correct CAPITALIZATION.
+\vspace*{1.0cm}
+
+  \videoheading{Video 03.020 Assignments}
+
+  \question In Java, \texttt{\textbf{x = x + 1}} is not a mathematical equation.  Explain why this is not an equation.  What does it mean in Java?  If it helps, assume you are trying to explain to a non-programmer what the statement means.
+  \vspace{2cm}
+
+  \begin{samepage}
+  \question Rewrite the following two statements using the "shortcut" notation.
+\begin{verbatim}
+  i = i + 39;
+  s = s + "world";
+
+
+
+\end{verbatim}
+\end{samepage}
+
+\videoheading{Video 03.020 Assignments Part 2}
+
+\question In the debugger, what is the name for the "red dot?"
+\question In the debugger, how do you execute one statement at a time?
+\question How do you stop the debugger?
+
+\begin{samepage}
+  \question Rewrite each of the following statements using the appropriate shortcut.
+  \begin{itemize}
+    \item \texttt{x = x - 2;}
+    \item \texttt{x = x * 2;}
+    \item \texttt{x = x / 2;}
+    \item \texttt{x = x \% 2;}
+  \end{itemize}
+  \vspace{0.5cm}
+\end{samepage}
+
+\videoheading{Video 03.025 Increment Operator}
+
+\question Write the following statement using the increment operator.
+
+\begin{verbatim}
+    cents = cents + 1;
+
+
+\end{verbatim}
+
+\begin{samepage}
+\question What is the output of the following lines of code?  If you need to, write a quick little program that tests it out.
+\begin{verbatim}
+  int i = 6;
+  int j = i++;
+  System.out.printf("i is %d and j is %d.\",i,j);
+  int j = ++i;
+  System.out.printf("i is %d and j is %d.\",i,j);
+  j = i++ * 3;
+  System.out.printf("i is %d and j is %d.\",i,j);
+  j = ++i * 3;
+  System.out.printf("i is %d and j is %d.\",i,j);
+\end{verbatim}
+
+Output:
+
+    i is \_\_\_\_ and j is \_\_\_\_
+
+    i is \_\_\_\_ and j is \_\_\_\_
+
+    i is \_\_\_\_ and j is \_\_\_\_
+
+    i is \_\_\_\_ and j is \_\_\_\_
+\end{samepage}
+\question
+The previous question was kind of a nightmare to figure out.  It is prone to errors.  How can you avoid these types of errors with the increment and decrement operators?
+\\
+\question What is the postfix decrement operator?
+
+\videoheading{Video 03.027 Bits and Bytes}
+
+Don't worry, I am not dead.  My camera just froze part way through the video.
+
+\question What do light switches have to do with computers?
+\question What are the 4 patterns available in 4 bits?
+\question \textit{Approximately} how many patterns can you have with 32 bits?
+\question Suppose 1011 is a 4-bit binary number.  What is this number in decimal?
+\question How many different patterns can you have with 8 bits?
+\question Does Java have unsigned integers?
+\question What is a byte on modern computers?
+
+\videoheading{Video 03.030}
+
+I am still not dead.  Despite appearances.
+
+\question What is the default integer type in Java?
+
+\question What is the default real number type in Java?
+
+\question When using a double, how many significant digits are available?
+\question When using a float, how many significant digits are available?
+\question Approximately what is the largest exponent possible for doubles (to the nearest 100)?
+\question Approximately what is the largest exponent possible for floats (to the nearest 10)?
+\question Write the line of code needed to assign the value of 3.14 to a float variable called smallPi
+
+
+
+\begin{samepage}
+  \question Suppose f is a float and x is a double.  
+
+  \nopagebreak
+  Is this statement legal in Java? \texttt{x = f;}
+
+  \nopagebreak
+  Is this statement legal in Java \texttt{f = x;}
+
+  \nopagebreak
+  Explain your answers.
+\end{samepage}
+
+\videoheading{Video 03.040 Numeric Types (integers)}
+
+\question What is the range for the data type \texttt{byte}?
+\question What is the range for the data type \texttt{short}?
+\question \textit{Approximately} what is the range for the data type \texttt{int};
+\question \textit{Very roughly,} what is the range for the data type \texttt{long};
+
+\question Suppose grades are represented as integers from 0 through 100.  Would it be safe to use a byte to represent a grade of this type? Explain.
+\vspace{1cm}
+
+\question Is it OK to use leading zeros when writing decimal integers in Java?  What does the leading zero indicate?
+
+\videoheading{Video 03.080 Feet2Meters}
+\question Why was FEET2METERS capitalized?
+\question The program did the output with println and printf.  In your opinion, which was better?  Why? (There is no correct answer.  The question is asking for your opinion and why you picked that answer.)
+\vspace{1.2cm}
+\videoheading{Video 03.090 Integer Division Danger}
+
+\question The title suggests there is danger.  What is the danger?
+\vspace{1.5cm}
+\question What is a cast?
+\begin{samepage}
+Consider the following two statements. Assume that i is an integer and x is a double.
+\begin{verbatim}
+  x = i;
+  i = x;
+\end{verbatim}
+Would either of the statements be "safe?"  Would either be dangerous?  If one or both of the statements is dangerous, rewrite it so that it does a proper cast.
+\end{samepage}
 \end{questions}
+\vspace{2.0cm}
+If you have any questions, please write them in the area below.
 \begin{figure}[b]\label{end}
 	\center
 	\includegraphics[width=1in]{java}
