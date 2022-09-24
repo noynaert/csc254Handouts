@@ -25,7 +25,7 @@ public class Chores {
         // echo print
         System.out.printf("\tThe dishes were washed: %B\n", room);
         System.out.printf("\tThe room was cleaned: %B\n", dishes);
-        System.out.printf("\tThe dishes were washed: %B\n", lawn);
+        System.out.printf("\tThe lawn was mowed: %B\n", lawn);
 
         // calculate
         gets10dollars = room && dishes || lawn;
