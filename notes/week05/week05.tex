@@ -1,0 +1,217 @@
+% !TEX program = xelatex
+% Notes template for CSC 254
+% The document is based on the exams class at https://math.mit.edu/~psh/exam/examdoc.pdf
+% 
+% This document uses the csc254.sty file
+
+\documentclass[letterpaper,11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, graphicx, latexsym, verbatim, xspace, setspace}
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{CSC 254}
+\newcommand{\term}{NOTES}
+\newcommand{\examnum}{Week 05, mostly chapter 03}
+\newcommand{\videoheading}[1]{\Large\textbf{\textit{#1}}}
+
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\includegraphics[width=1in]{javant}}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.8in} r l}
+\textbf{\class} & \textbf{Name (Print):} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+
+This assignment contains \numpages\ pages (including this page) and
+\numquestions\ questions.  Check to see if any pages are missing.\\
+
+These pages are indexed to the videos for this course.\\
+
+\textbf{Grading}
+
+This material comes mostly from Chapter 03 in the textbook.
+
+\videoheading{Video 04.010 Booleans}
+
+
+\begin{questions}
+    \question What are the two possible values used by booleans?
+    \question Create a boolean variable called \texttt{\textbf{hasWheels}} and set its initial value to false.
+  \question Write the java symbol used for each operator:
+  \begin{itemize}
+    \item Less Than
+    \item Less Than or Equal To
+    \item Greater Than
+    \item Greater Than Or Equal To
+    \item Equal To
+    \item Not Equal To
+  \end{itemize}
+  \question Suppose there is an integer variable called \texttt{\textbf{golfScore}}.  Create a boolean variable called \texttt{\textbf{beatPar}}.  Set beatPar to true if the golfScore is less than 70 and false if it was 70 or higher.  Do \textit{not} use an if statement or a conditional.
+  \vspace{1.5cm}
+
+\videoheading{Video 04.202 Truth Tables}
+
+\begin{samepage}
+  \question Assume the following variables are defined:
+  \begin{verbatim}
+      boolean isOldEnough = false;
+      boolean isTallEnough = true;
+      boolean isFastEnough = true; 
+      boolean hasSeniority = false;
+  \end{verbatim}
+  Evaluate the following boolean expression.  (Is it true or false?)
+  \begin{verbatim}
+        isOldEnough || isTallEnough && isFastEnough || hasSeniority
+  \end{verbatim}
+  \textbf{Explain your answer in the space below}
+  \vspace{2cm}
+\end{samepage}
+  
+
+\begin{samepage}
+\question Assume the following variables are defined:
+\begin{verbatim}
+    int age = 25;
+    int pointsEarned = 25;
+    int friendCount = 25;
+\end{verbatim}
+Evaluate the following boolean expression.  (Is it true or false?)
+\begin{verbatim}
+    age > 30 || pointsEarned > 20 && friendCount > 20
+\end{verbatim}
+\question Which of the following places the parenthesis so that it matches the default precedence?
+\begin{verbatim}
+  (age > 30 || pointsEarned > 20) && friendCount > 20
+  age > 30 || (pointsEarned > 20 && friendCount > 20)
+\end{verbatim}
+\end{samepage}
+\begin{minipage}{\textwidth}
+  \question The sign at an amusement park ride says "You must be over 42 inches tall or be at least 8 years old and accompanied by an adult."  Assume there are defined boolean variables for \texttt{\textbf{over42}}, \texttt{\textbf{over8}}, and \texttt{\textbf{withAdult}}.  Write the boolean expression that evaluates whether the person may take the ride.
+  \vspace{1cm}
+  Complete the following truth table for the ride.\\
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+      over42 & over8 & withAdult & mayRide \\
+      \hline
+      0 & 0 & 0 & \\\hline
+      0 & 0 & 1 & \\\hline
+      0 & 1 & 0 & \\\hline
+      0 & 1 & 1 & \\\hline
+      1 & 0 & 0 & \\\hline
+      1 & 0 & 1 & \\\hline
+      1 & 1 & 0 & \\\hline
+      1 & 1 & 1 & \\
+    \hline
+  \end{tabular}
+\end{minipage}
+\\
+\\
+\videoheading{Video 04.040 If Statements, Part 1}
+\question  What are two syntax differences between Python and Java?
+\begin{itemize}
+  \item  
+  \item  
+\end{itemize}
+\question When doesn't Java need \{ \} around the body of an if or else?
+\vspace{1.cm}
+
+\question Why is it usually a good idea to put in the curly braces, even when they are not needed.
+\vspace{1.cm}
+\question Assume the following two variables are declared.
+\begin{verbatim}
+  int age;
+  double discount
+\end{verbatim}
+Write an if statement that assigns discount to 0.10 if age is at least 65 or if age is no more than 18.  Make sure you use proper indentation.
+\vspace{3.cm}
+\question Does every if statement need an else clause?  Explain your answer
+\vspace{1.5cm}
+
+
+\begin{minipage}{\textwidth}
+  \videoheading{Video 04.030 Part 2, Two-handed hammering}\\
+  Image attribution to https://freepix.com
+  \question rewrite the following if statement so that it is not tacky.
+  \begin{verbatim}
+    if(age >= 21){
+      isOldEnough = true;
+    }else{
+      isOldEnough = false;
+    }
+  \end{verbatim}
+\end{minipage}
+\begin{minipage}{\textwidth}
+  \question rewrite the following if statement so that it is not tacky. (You only need to rewrite the tacky part.  In fact, you can just cross out the tacky part.)
+  \begin{verbatim}
+    if(isBirthday == true){
+      System.out.println("Happy Birthday!");
+    }else{
+      System.out.println("Have a nice day.");
+    }
+  \end{verbatim}
+\end{minipage}
+
+\videoheading{Video 04.047 Danger Zone}
+
+\question What is wrong with the following fragment of an if statement?
+\begin{verbatim}
+if(1.1 + 1.1 + 1.1 == 3.3)
+\end{verbatim}
+\question Is it OK to use == when working with Strings?  How are String variables different than type like int, double, and boolean?
+\vspace{1cm}
+\question Is it OK to use \textless and \textgreater operators when working with Strings?
+
+\videoheading{Video 04.050 Switch Statement}
+
+\question What data types may be used to control a switch statement (assuming the universal or classic Java version)
+\question How is \texttt{\textbf{System.\textcolor{red}{err}.println("xyz");}} different than \texttt{\textbf{System.out.println("xyz");}}
+\begin{minipage}{\textwidth}
+\question A program prints the following menu on the screen.
+\begin{verbatim}
+    1. Broccoli Beef
+    2. Hamburger Patty
+    3. Bœuf  Haché 
+    4. Fried Chicken
+    5. Rice Bowl with Vegetables
+\end{verbatim}
+The program has read the user's choice into an integer called \texttt{\textbf{choice}}.  Your job is to write a switch statement that saves the user's choice as a variable called \texttt{\textbf{item}}. If the user picks any number other than 1 through 4, the item should be "Invalid Selection."  Also, Bœuf  Haché is just French for "Hamburger Patty."  So if the user picks either 2 or 3, it should be listed as Hamburger Patty. Use the "fall through" to do one assignment for both options 2 and 3.
+\vspace{6cm}
+\end{minipage}
+\videoheading{Video 04.060 Conditional Operator}
+\question You are writing the Java version of the son "99 Bottles of Beer on the Wall."  There is a variable for the number of bottles remaining.  You need the program to print the term "beers" when the number is plural or zero, and print "beer" when there is exactly 1 bottle.  Here is the if-statement version.  Write the same code as a single conditional.
+\begin{verbatim}
+  if(remaining == 1){
+    System.out.printf("%d bottle of beer on the wall",remaining);
+  }else{
+    System.out.printf("%d bottles of beer on the wall", remaining);
+  }
+\end{verbatim}
+\end{questions}
+\begin{figure}[b]\label{end}
+	\center
+	\includegraphics[width=1in]{java}
+\end{figure}
+\end{document}
