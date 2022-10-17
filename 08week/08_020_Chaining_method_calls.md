@@ -13,8 +13,7 @@
 
 A lot of the focus on this unit is on the data type of the method.
 
-```Java
-
+```java
 String word = "     catterful   "
 character ch;
 ch = word.charAt(0);
@@ -33,7 +32,7 @@ The Scanner class is inconsistent with how it names methods.
 * `nextBoolean()` returns a boolean
 * `next()` returns a String.
 * nextChar IS MISSING!  There is no nextChar method.  
-```java 
+
 
 If you want ~~nextChar()~~ you have to do the following:
 
