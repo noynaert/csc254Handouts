@@ -44,6 +44,25 @@ try{
     number = 0;
 }
 ```
+## Scope
 
-In the above, note that line and number are declared outside the {} of the try and catch clauses.
+A block is the lines of code within {curly braces}.
 
+*Scope* is the area where a variable is available for use.  In general, a variable is available inside the curly braces where it is declared.  It is also available inside any blocks within the block where the variable is declared.
+
+In the above, note that line and number are declared outside the {} of the try and catch clauses.  If they were declared inside the { } they would not be available to the parts of the program outside of the curly braces.  
+
+```java
+if(...){
+    int i = 7;
+    if(...){
+        int j = 3;
+        int k = 0;
+        System.out.println(i + " " j); //This is OK.  Both `i` and `j` are in scope
+    }
+    if(...){
+        int j = 99;  //This is OK, because it is in a different scope than the previous j.
+            // k is not available here, but I is.  The local `j with a value of 99 is available, but not the one with a value of 3
+    }    
+}
+```
