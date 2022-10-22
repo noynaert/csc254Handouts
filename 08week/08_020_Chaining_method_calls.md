@@ -14,13 +14,15 @@
 A lot of the focus on this unit is on the data type of the method.
 
 ```java
-String word = "     catterful   "
-character ch;
-ch = word.charAt(0);
-ch = word.charAt( word.length() -1);
-ch = "rentatter".charAt(0);
-ch = word.charAt(0).toUpperCase();
-System.out.printf("The letter is '%c'\n",ch);
+        String line;
+        String modified;
+
+        line = "     catterful   ";
+        modified = line.trim();
+        line = "   pruvia   ".trim();
+        System.out.printf("Original: \"%s\"\n", line);
+        modified = line.trim().toUpperCase();
+        System.out.printf("Modified: \"%s\"\n", modified);
 ```
 
 ## Scanners:  `next()` 
