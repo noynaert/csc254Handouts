@@ -1,0 +1,194 @@
+% !TEX program = xelatex
+% Notes template for CSC 254
+% The document is based on the exams class at https://math.mit.edu/~psh/exam/examdoc.pdf
+% 
+% This document uses the csc254.sty file
+
+\documentclass[letterpaper,11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, graphicx, latexsym, verbatim, xspace, setspace}
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{CSC 254}
+\newcommand{\term}{NOTES}
+\newcommand{\examnum}{Week 08 Loops}
+\newcommand{\videoheading}[1]{\Large\textbf{\textit{#1}}}
+
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\includegraphics[width=1in]{javant}}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.8in} r l}
+\textbf{\class} & \textbf{Name (Print):} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+
+This assignment contains \numpages\ pages (including this page) and
+\numquestions\ questions.  Check to see if any pages are missing.\\
+
+These pages are indexed to the videos for this course.\\
+
+\textbf{Grading}
+
+\videoheading{Video 08.010 About Loops}
+
+Sorry about the poor audio quality on the first few videos.  I was apparently recording from a microphone on headphones lying on my desk.
+
+\begin{questions}
+  \question In a simple while loop, is the body of the loop always executed at least one time?
+  \question in a do\{...\}while() loop, is the body of the loop always executed at least one time?
+  \question in a for loop, is the body of the loop always executed at least one time?
+
+  \question It is important to understand the syntax of each type of loop.  What other things must you also learn?
+  \vspace*{1cm}
+
+  \videoheading{08.015 Part 1 Wrappers}
+\question What is the wrapper class for each of the following types?
+\begin{itemize}
+  \item int
+  \item double 
+  \item boolean
+  \item char
+  \item byte
+\end{itemize}
+\question Some methods may be called with the name of the wrapper class.  For example, \texttt{\textbf{Integer.parseInt()}}. Others must be called with an instance of the class before the period.  What one word in the API tells you whether a method may be called with the name of the Wrapper class?
+\question Can values be stored in a variable that is a wrapper class?
+\question What does it mean when a method is "deprecated?"
+\vspace{1cm}
+
+\videoheading{015 Part 2 Parsing}
+\question What is parsing?
+\vspace{1cm}
+\question A String variable \texttt{\textbf{s}} contains an integer.  Write the single line of code to convert the string int a number and store it in an int called \texttt{\textbf{number}}.  Do not worry about errors or exceptions.
+\vspace{1cm}
+
+\videoheading{08.020 Chaining methods}
+
+\question What does the \texttt{\textbf{trim()}} function do?
+\question Assume the String variable \texttt{\textbf{line}} contains a string.  Write the single line of code necessary to remove the leading and trailing whitespace from line.  Store the result in a string named \texttt{\textbf{s}}
+\vspace{1cm}
+\question The Scanner class uses \texttt{\textbf{.nextInt()}} to read an integer.  What are two methods for reading a String?
+\begin{itemize}
+  \item
+  \item
+\end{itemize}
+\question Assume that Scanner has already been used to create a scanner called \texttt{\textbf{input}}.  Write a single command that reads a line of input from the keyboard and trims it.  use chaining.
+\vspace*{1cm}
+
+\videoheading{08.030 Scope}
+\question What is a block?
+\question Can blocks be nested inside each other?
+\begin{samepage}
+\begin{verbatim}
+  public static void main(String[] args){
+    int a = 7;
+    if(true){
+      int b = 8;
+      //line #1
+    }else{
+      int c = 9;
+      //line #2
+    }
+    //line 3
+  }
+\end{verbatim}
+\question In the above block of code, is \texttt{\textbf{a}} visible at line \#1?
+\question In the above block of code, is \texttt{\textbf{a}} visible at line \#2?
+\question In the above block of code, is \texttt{\textbf{a}} visible at line \#3?
+\question In the above block of code, is \texttt{\textbf{b}} visible at line \#1?
+\question In the above block of code, is \texttt{\textbf{b}} visible at line \#2?
+\question In the above block of code, is \texttt{\textbf{b}} visible at line \#3?
+\question In the above block of code, is \texttt{\textbf{c}} visible at line \#1?
+\question In the above block of code, is \texttt{\textbf{c}} visible at line \#2?
+\question In the above block of code, is \texttt{\textbf{c}} visible at line \#3?
+\end{samepage}
+
+Comment:  The end of the video is just about the rainbow{} plugin in Idea.  It will not be on the exam.
+
+\videoheading{08.040 Part 1 do while}
+\question Is do...while a pretest or posttest loop?
+\question Is the body of a do...while loop always executed at least one time?
+\question The do...while loop is often associated with getting user input. Why is the do...loop especially useful for getting user input?
+\question All variables used in the boolean expression after while() must be declared outside the do\{\} block.  Why is this true?
+\vspace{1cm}
+\question Why does writing the condition for a while get confusing and error-prone?
+\question What is the instructor's "hack" for fixing the tricky logic of do...while?  What is the side benefit of this method?
+\vspace{2cm}
+
+\videoheading{08.040 Part 2 Errors Everywhere}
+\question Should your program run correctly no matter what the user enters?  Explain your anawer.
+\vspace{2cm}
+\question When assigning a default value for a loop control, what type of value should you initialize to, if possible?  Why?
+\vspace{1cm}
+\question How is \texttt{\textbf{System.err}} different than \texttt{\textbf{System.out}}?
+\vspace{1cm}
+
+Comment:  You will not need to write a try...catch block from scratch on an exam.  But you should be able to write them in your programs.
+
+\question A String variable \texttt{\textbf{s}} contains an integer.  Write the code to convert the string int a number and store it in an int called \texttt{\textbf{number}}. Print an appropriate message if an exception occurs.
+\vspace{1cm}
+
+\videoheading{08.040 Part 3, Strings and Char}
+\question Write a program that asks the user if they want the red pill or the blue pill.  Ask the user to type in either "red" or "blue."  Your snippet of code should use a do...while to only accept the words "red" or "blue."  If the user types anything else they should get an error message telling them to type red or blue.  Read the user input as a line.  Use chaining to trim() the input and convert it to lower case characters.
+\vspace{5cm}
+\question Rewrite the above block, but accept either "r" or "b".  This should just be the first character if they type in the full name of the color.  So "blue" and "blunder" would both be accepted.
+\vspace{5cm}
+
+\videoheading{05.050 for loop}
+\question What are the three clauses in the for loop?
+\begin{itemize}
+  \item
+  \item
+  \item 
+\end{itemize}
+
+\question is the for loop a pretest loop or a posttest loop?
+
+\question What should the variables \texttt{\textbf{i}}, \texttt{\textbf{j}}, and \texttt{\textbf{k}} be used for?
+
+\question Write a for loop that prints the digits 5 up to 25.
+\vspace{2cm}
+
+\videoheading{08.060 while Part 1}
+
+Panopto trashed the sound quality.  I will try to rerender the file and re-upload.  Turning on CC may help.
+
+\question is a while loop a pretest or a posttest loop? 
+
+\videoheading{08.060 Part 2}
+
+Audio is still bad here.  I think it is because Panopto is changing the frame rate.
+
+\question In a sentinel-controlled loop, what do you need to do before the loop starts?
+\question In a sentinel-controlled loop, what is the last thing you should do in the body of the loop?
+
+\videoheading{08.070 nested loops}
+
+\question Suppose you have a nested loop.  The outer loop executes 5 times.  The inner loop executes 10 times.  How many times will the body of the inner loop execute?
+
+
+\end{questions}
+
+\end{document}
