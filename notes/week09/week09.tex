@@ -1,0 +1,79 @@
+% !TEX program = xelatex
+% Notes template for CSC 254
+% The document is based on the exams class at https://math.mit.edu/~psh/exam/examdoc.pdf
+% 
+% This document uses the csc254.sty file
+
+\documentclass[letterpaper,11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, graphicx, latexsym, verbatim, xspace, setspace}
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{CSC 254}
+\newcommand{\term}{NOTES}
+\newcommand{\examnum}{Week 09 Methods}
+\newcommand{\videoheading}[1]{\Large\textbf{\textit{#1}}}
+
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\includegraphics[width=1in]{javant}}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.8in} r l}
+\textbf{\class} & \textbf{Name (Print):} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+
+This assignment contains \numpages\ pages (including this page) and
+\numquestions\ questions.  Check to see if any pages are missing.\\
+\videoheading{This week's notes are based on the in-class session}
+\begin{questions}
+
+\question What is a method?
+\vspace{2cm}
+
+\question Why are all functions called methods in Java? (probably all are true, but which one is objectively accurate)
+\begin{itemize}
+  \item Because Java is weird 
+  \item It's just a style thing
+  \item In Java all functions must be in a method
+  \item To make Java look different than C++
+\end{itemize}
+
+\question How is a static method called?
+\vspace{1cm}
+\question Give an example of how \texttt{\textbf{parseInt}} in class \texttt{\textbf{Integer}} would be called on a string called \texttt{\textbf{number}}.
+\question How is a non-static method called?
+\question Give an example of how \texttt{\textbf{length}} in class \texttt{\textbf{String}} would be called on a string called \texttt{\textbf{number}}.
+\question When a static method is called \textit{fom within its own class} how can it be called?  
+\vspace{1cm}
+
+
+
+
+
+
+\end{questions}
+
+\end{document}
