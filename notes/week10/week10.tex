@@ -51,7 +51,65 @@ This assignment contains \numpages\ pages (including this page) and
 \begin{questions}
 
 \question What is an array?
+\vspace{1.5cm}
+\question In Java, all elements in an array must be of the same type.
+\begin{itemize}
+  \item  True
+  \item  False
+  \item 
+\end{itemize}
+\question What does \texttt{\textbf{n}} usually represent
+
+\question What is actually stored in the array variable?
+
+\question Is it easy to make arrays bigger after they are declared in Java?
+
+\videoheading{10.020 Args[]}
+\question what is \texttt{\textbf{String[] args}}?
+\vspace*{1cm}
+\question How can you print the physical length of an array?  Does it have () after length?
+\vspace{1cm}
+\question Write a for loop to print the args[] array.
+\vspace{4cm}
+\question What would the above loop do if the args array is empty?
+\question Assume that the args array has \textit{at least} 1 element.  What would the following statement print?
+\begin{verbatim}
+    System.out.println( args[args.length-1])
+\end{verbatim}
+
+\videoheading{10.030 Splitting Strings}
+\question What does the \texttt{\textbf{split()}} method return?
+\question What is the simplest type of regex?
+\question Write the statement needed to split a spring on a # symbol and store the results in an array called \texttt{\textbf{things}}.
+\vspace{1cm}
+\question if a line is empty, then what is the length of the array that will be returned?  Why is this a potential problem?
+\vspace{1cm}
+\videoheading{10.040 Reading from a file}
+\question What is a stream?  What are some sources for character streams?
+\question What is a relative path?
+\question Where should you put a file in Intellij in order to make it as simple as possible to read?
+
+\question What extra steps do we have to do to read from a file that we did not need to do when reading from a keyboard?
+\vspace{4cm}
+
+\videoheading{10.050 Reading all the lines}
+\question What data type is returned by the hasNext family of methods?
+\question Write a loop that would read and echo print all of the Strings in a file (note that this is not using hasNextLine().  If you need to, look it up in the Scanner api.)
+\vspace{4cm}
+
+\videoheading{10.060 Declaring an array}
+\question Declare an array that may hold up to 10 Strings.  Set a constant to 10 and be sure to also create a variable that represents the current number of elements in the array (or, the logical size of the array).
 \vspace{2cm}
+
+\videoheading{10.070 Reading a file into an array}
+\question Write the \texttt{\textbf{while}} statement needed to read all the doubles from a file. The array may hold up to MAXSIZE doubles.
+\question The following statement does two important things.  What are the two things it does?
+\begin{verbatim}
+    words[n++] = input.next();
+\end{verbatim}
+
+\question Write a complete method (function) that prints the items in an array.  Pass in the array and n to represent the logical size of the array.
 \end{questions}
+
 
 \end{document}
