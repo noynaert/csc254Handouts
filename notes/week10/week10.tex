@@ -1,0 +1,57 @@
+% !TEX program = xelatex
+% Notes template for CSC 254
+% The document is based on the exams class at https://math.mit.edu/~psh/exam/examdoc.pdf
+% 
+% This document uses the csc254.sty file
+
+\documentclass[letterpaper,11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, graphicx, latexsym, verbatim, xspace, setspace}
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{CSC 254}
+\newcommand{\term}{NOTES}
+\newcommand{\examnum}{Week 10 Arrays}
+\newcommand{\videoheading}[1]{\Large\textbf{\textit{#1}}}
+
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\includegraphics[width=1in]{javant}}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.8in} r l}
+\textbf{\class} & \textbf{Name (Print):} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+
+This assignment contains \numpages\ pages (including this page) and
+\numquestions\ questions.  Check to see if any pages are missing.\\
+\videoheading{Video 10.010 About Arrays}
+\begin{questions}
+
+\question What is an array?
+\vspace{2cm}
+\end{questions}
+
+\end{document}
