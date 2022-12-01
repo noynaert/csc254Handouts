@@ -1,0 +1,7 @@
+Sheldon:35
+Leonard:34
+Penny:28
+
+Raj:30
+Howard:28
+Amy:36
